@@ -49,9 +49,8 @@ my_anaunit.SetTrackProducer(True,"mcreco");
 
 # Implement manager
 my_anaunit._mgr.AddAlgo(my_algoempart)
-my_anaunit._mgr.AddAlgo(my_ana)
+my_anaunit._mgr.AddAna(my_ana)
 my_anaunit._mgr._mc_for_ana = True
-# my_anaunit._mgr.AddAna(my_ana)
 # my_ana._mode =True # True = Select. False = Fill mode
 my_proc.add_process(my_anaunit)
 
