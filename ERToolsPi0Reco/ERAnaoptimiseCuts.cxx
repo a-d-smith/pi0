@@ -22,9 +22,9 @@ namespace ertool {
 		cutMax = 0.0112;
 		Ncuts  = 100;	
 		
-		Nc.resize(Ncuts);							
-		Ni.resize(Ncuts);
-		Nm.resize(Ncuts);
+		Nc.resize(Ncuts,0);							
+		Ni.resize(Ncuts,0);
+		Nm.resize(Ncuts,0);
 		
 		pairNo = 0;
 	}
